@@ -1,0 +1,8 @@
+NAME                    NETWORK  DIRECTION  PRIORITY  ALLOW
+default-allow-icmp      default  INGRESS   65534     icmp
+default-allow-internal  default  INGRESS   65534     tcp:0-65535,udp:0-65535,icmp
+default-allow-rdp       default  INGRESS   65534     tcp:3389
+default-allow-ssh       default  INGRESS   65534     tcp:22
+
+Comentario:
+Las reglas de firewall por defecto permiten conexiones SSH mediante el puerto 22, RDP mediante el puerto 3389 y tráfico ICMP para pruebas de conectividad.
